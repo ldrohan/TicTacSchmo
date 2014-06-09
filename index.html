@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.min.js"></script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+  <h1>Tic Tac Schmo</h1>
+<body ng-app="TicTacToeApp">
+  
+  <div ng-controller="gameCtrl">
+    <table>
+      <tr>
+        <td ng-click="addMove(1)"><span ng-show="checkboxes[1]">{{checkboxes[1]}}<span></td>
+        <td ng-click="addMove(2)"><span ng-show="checkboxes[2]">{{checkboxes[2]}}<span></td>
+        <td ng-click="addMove(3)"><span ng-show="checkboxes[3]">{{checkboxes[3]}}<span></td>
+      </tr>
+      <tr>
+        <td ng-click="addMove(4)"><span ng-show="checkboxes[4]">{{checkboxes[4]}}<span></td>
+        <td ng-click="addMove(5)"><span ng-show="checkboxes[5]">{{checkboxes[5]}}<span></td>
+        <td ng-click="addMove(6)"><span ng-show="checkboxes[6]">{{checkboxes[6]}}<span></td>
+      </tr>
+      <tr>
+        <td ng-click="addMove(7)"><span ng-show="checkboxes[7]">{{checkboxes[7]}}<span></td>
+        <td ng-click="addMove(8)"><span ng-show="checkboxes[8]">{{checkboxes[8]}}<span></td>
+        <td ng-click="addMove(9)"><span ng-show="checkboxes[9]">{{checkboxes[9]}}<span></td>
+      </tr>
+      
+   </table>
+    <button ng-click="newGame()">New Game</button>
+    <button ng-click="findWinner()">Test</button>
+    {{}}
+  </div>
+  
+</body>
+</html>
